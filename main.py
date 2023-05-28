@@ -19,6 +19,7 @@ def get_totalPoints():
         except ValueError:
             print("You must enter an integer value >= 0 and <= 1000. Try Again")
 
+
 def get_letterGrade(averageEarned):
     if averageEarned >= 92:
         return "A"
@@ -36,6 +37,10 @@ def get_letterGrade(averageEarned):
         return "F"
 
 
-if __name__ == "__main__":
+def main():
     display_title()
-    get_totalPoints()
+
+
+
+if __name__ == "__main__":
+    main()
