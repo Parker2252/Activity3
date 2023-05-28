@@ -6,6 +6,7 @@
 def display_title():
     print("Welcome to the Grade Calculator")
 
+
 def get_totalPoints():
     while True:
         try:
@@ -18,9 +19,21 @@ def get_totalPoints():
         except ValueError:
             print("You must enter an integer value >= 0 and <= 1000. Try Again")
 
-
-
-
+def get_letterGrade(averageEarned):
+    if averageEarned >= 92:
+        return "A"
+    elif averageEarned >= 88:
+        return "B+"
+    elif averageEarned >= 82:
+        return "B"
+    elif averageEarned >= 78:
+        return "C+"
+    elif averageEarned >= 70:
+        return "C"
+    elif averageEarned >= 60:
+        return "D"
+    else:
+        return "F"
 
 
 if __name__ == "__main__":
