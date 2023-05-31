@@ -42,11 +42,14 @@ def main():
     while True:
         total_points = get_totalPoints()
         lettergrade = get_letterGrade(total_points / 1000 * 100)
-        print(lettergrade)
+        percent = (total_points / 1000 * 100)
+        print(f"You earned an average of {percent:.1f}%. Letter grade earned: {lettergrade}")
 
-        choice = str("Would you like to enter another score (y/n)?: ")
+        choice = input("Would you like to enter another score (y/n)?: ")
         if choice == 'n':
             break
+    print()
+    print("Thank You")
 
 
 if __name__ == "__main__":
