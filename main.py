@@ -13,7 +13,6 @@ def get_totalPoints():
             total_points = int(input("Enter the total score (0-1000): "))
             if total_points < 0 or total_points > 1000:
                 print("You must enter an integer value >= 0 and <= 1000. Try Again")
-                return total_points
             else:
                 print(total_points)
                 return total_points
